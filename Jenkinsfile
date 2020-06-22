@@ -73,7 +73,7 @@ pipeline{
         stage("Deployment-AppServer"){
             steps{
               echo "hi"
-             sh label: '', script: 'scp /var/lib/jenkins/workspace/Harindra/target/app.war ubuntu@172.31.2.23:/opt/tomcat9/webapps/june.war'
+             sh label: '', script: 'scp /var/lib/jenkins/workspace/Harindra/webapp/target/webapp.war ubuntu@172.31.2.23:/opt/tomcat9/webapps/june.war'
            }
          post{
               failure{
