@@ -1,23 +1,38 @@
-<form action="action_page.php">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
-
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Example</title>
+    </head>
+    <body>
+        <form method="post" action="login.jsp">
+            <center>
+            <table border="1" width="30%" cellpadding="3">
+                <thead>
+                    <tr>
+                        <th colspan="2">Login Here</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>User Name</td>
+                        <td><input type="text" name="uname" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="pass" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Login" /></td>
+                        <td><input type="reset" value="Reset" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Yet Not Registered!! <a href="reg.jsp">Register Here</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            </center>
+        </form>
+    </body>
+</html>
