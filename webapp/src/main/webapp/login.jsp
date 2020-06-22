@@ -4,7 +4,7 @@
     String pwd = request.getParameter("pass");
     Class.forName("com.mysql.jdbc.Driver");
     Connection con = DriverManager.getConnection("jdbc:mysql://172.31.9.95:3306/harindra",
-            "root", "dbpass");
+            "root", "bangaram9$");
     Statement st = con.createStatement();
     ResultSet rs;
     rs = st.executeQuery("select * from members where uname='" + userid + "' and pass='" + pwd + "'");
